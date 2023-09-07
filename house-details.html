@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b9cdf36b5d.js" crossorigin="anonymous"></script>
+  <title>Staybnb</title>
+</head>
+<body>
+  <nav id="navBar" class="navbar-white">
+    <a href="index.html"><img src="images/logo-red.png" class="logo"></a>
+    <ul class="nav-links">
+        <li><a href="#" class="active">Popular Places</a></li>
+        <li><a href="#">Travel Outside</a></li>
+        <li><a href="#">Online Packages</a></li>
+    </ul>
+    <a href="#" class="register-btn">Register Now</a>
+    <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+</nav>
+
+<div class="house-details">
+  <div class="house-title">
+    <h1>Wenge House</h1>
+    <div class="row">
+      <div>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+      <i class="far fa-star"></i>
+      <span>245 Reviews</span>
+      </div>
+      <div>
+        <p>Location: San fransisco, California, United States</p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="gallery-img-1"><img src="images/house-1.png"></div>
+      <div><img src="images/house-2.png"></div>
+      <div><img src="images/house-3.png"></div>
+      <div><img src="images/house-4.png"></div>
+      <div><img src="images/house-5.png"></div>
+    </div>
+    <div class="small-details">
+      <h2>Entire rental unit hosted by Bradon</h2>
+      <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 Bathroom</p>
+      <h4>$ 100 / day</h4>
+    </div>
+    <hr class="line">
+    <form class="check-form">
+      <div>
+        <label>Check-in</label>
+        <input type="text" placeholder="Add date">
+      </div>
+      <div>
+        <label>Check-out</label>
+        <input type="text" placeholder="Add date">
+      </div>
+      <div class="guest-field">
+        <label>Guest</label>
+        <input type="text" placeholder="2 guest">
+      </div>
+      <button type="submit">Check Availibility</button>
+    </form>
+    <ul class="details-list">
+      <li><i class="fas fa-home"></i> Entire home
+        <span>You will have the enitre flat for you.</span>
+      </li>
+      <li><i class="fas fa-paint-brush"></i>Enhanced Clean
+        <span>This host has committed to staybnb's cleaning process</span>
+      </li>
+      <li><i class="fas fa-map-marker-alt"></i>Great Location
+        <span>90% of recent guests gave the location a 5 star rating</span>
+      </li>
+      <li><i class="fas fa-heart"></i>Great Check-in Experience
+        <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+      </li>
+    </ul>
+  </div>
+  <hr class="line">
+
+  <p class="home-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+  <hr class="line">
+
+  <div class="map">
+    <h3>Location on map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.9686998405455!2d30.96554507472376!3d-29.922803274984993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7abec5afa4183%3A0x426a837b119cd931!2s96%20Montclair%20Rd%2C%20Montclair%2C%20Durban%2C%204061!5e0!3m2!1sen!2sza!4v1694004525085!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <b>San Francisco, California, United States</b>
+    <p>It's like a home away from home</p>
+  </div>
+  <hr class="line">
+
+  <div class="host">
+    <img src="images/host.png">
+    <div>
+      <h2>Hosted by Brandon</h2>
+      <p>
+        <span>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+        </span>
+        &nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60 min
+      </p>
+    </div>
+</div>
+
+<a href="#" class="contact-host">Contact Host</a>
+
+</div>
+
+
+
+
+
+
+<div class="footer">
+  <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+  <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+  <hr>
+  <p>Copyright @ 2021, Easy tutorials.</p>
+</div>
+</div>
+
+
+<script>
+const navBar = document.getElementById("navBar");
+
+function togglebtn() {
+  navBar.classList.toggle("hidemenu");
+}
+</script>
+</body>
+</html>
